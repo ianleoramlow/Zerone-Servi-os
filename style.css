@@ -277,6 +277,11 @@ footer {
 }
 
 
+/* Ajuste no posicionamento da barra de sugestões */
+.header-right {
+    position: relative; /* Tornar a posição do contêiner relativa para que os itens internos possam ser posicionados de forma absoluta */
+}
+
 .suggestions {
     position: absolute;
     top: 40px; /* Ajuste a altura para garantir que apareça abaixo da barra de pesquisa */
