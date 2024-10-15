@@ -1,0 +1,302 @@
+/* Estilos Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4; /* Fundo claro */
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.nav-links li a:hover {
+    color: #00f;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-bar {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 200px;
+}
+
+.btn-whatsapp {
+    background-color: #25D366;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1d8f53;
+}
+
+/* Seção Home */
+#home {
+    padding: 40px 20px; /* Espaçamento para dar mais respiro */
+    background-color: #f9f9f9; /* Cor de fundo clara */
+}
+
+.home-content {
+    display: flex;
+    align-items: center; /* Alinhar a imagem e o texto verticalmente */
+    justify-content: space-between; /* Espaçar os itens */
+    gap: 20px; /* Espaçamento entre a imagem e o texto */
+    flex-wrap: wrap; /* Para os itens se ajustarem no layout em telas menores */
+}
+
+.home-img img {
+    max-width: 100%; /* Deixar a imagem responsiva */
+    height: auto; /* Manter as proporções da imagem */
+    border-radius: 5px; /* Bordas arredondadas para a imagem */
+    max-width: 500px; /* Limitar a largura da imagem */
+    height: 500px;;
+}
+
+.home-text {
+    max-width: 600px; /* Limitar a largura do texto */
+    color: #000; /* Cor do texto */
+}
+
+.home-text h2 {
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    font-size: 28px; /* Tamanho do título */
+}
+
+.home-text p {
+    margin-bottom: 10px; /* Espaço entre os parágrafos */
+    line-height: 1.6; /* Melhorar a legibilidade */
+    color: #333; /* Cor dos parágrafos */
+}
+
+
+/* Seção de Serviços */
+#servicos {
+    padding: 20px;
+    background-color: #f9f9f9; /* Fundo claro para destacar a seção */
+}
+
+.servicos-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.servico {
+    flex: 1 1 200px; /* Tamanho flexível das colunas */
+    background-color: #fff; /* Fundo branco */
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+.servico h3 {
+    margin-bottom: 10px;
+    color: #000; /* Cor do título */
+}
+
+.servico ul {
+    list-style-type: none; /* Remove a bolinha da lista */
+    padding-left: 0; /* Remove o padding */
+}
+
+.servico li {
+    margin: 5px 0; /* Espaçamento entre os itens da lista */
+    color: #333; /* Cor do texto dos itens */
+}
+
+
+/* Orçamento Section */
+#orcamento {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#orcamento p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+/* Seção Informações ainda mais compacta */
+#informacoes {
+    padding: 10px 15px; /* Reduzir ainda mais o espaçamento */
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centralizar verticalmente */
+    flex-wrap: wrap;
+    font-size: 12px; /* Diminuir o tamanho do texto */
+}
+
+.info-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 8px; /* Reduzir o espaçamento entre as caixas */
+    flex-wrap: wrap;
+}
+
+.info-box {
+    flex: 1 1 150px; /* Diminuir a largura mínima das caixas */
+    text-align: center; /* Centralizar o texto em cada box */
+}
+
+.info-box h3 {
+    margin-bottom: 4px;
+    font-size: 14px; /* Reduzir o tamanho do título */
+    color: #00f; /* Azul para os títulos */
+}
+
+.info-box p {
+    margin-bottom: 4px;
+    line-height: 1.3; /* Reduzir o espaçamento entre linhas */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 8px; /* Reduzir ainda mais o espaço entre os ícones */
+}
+
+.social-icon {
+    width: 20px; /* Diminuir ainda mais o tamanho dos ícones sociais */
+    height: auto;
+    filter: brightness(0) invert(1); /* Ícones brancos */
+}
+
+.social-icon:hover {
+    filter: brightness(0.7); /* Efeito ao passar o mouse */
+}
+.social-icon {
+    width: 20px; /* Tamanho pequeno para o ícone do e-mail */
+    height: auto;
+    filter: brightness(0) invert(1); /* Ícone branco para combinar com o fundo */
+}
+
+.social-icon:hover {
+    filter: brightness(0.7); /* Efeito ao passar o mouse */
+}
+
+
+
+
+
+/* Rodapé */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.suggestions {
+    position: absolute;
+    top: 40px; /* Ajuste a altura para garantir que apareça abaixo da barra de pesquisa */
+    left: 0;
+    width: 100%; /* Para a sugestão ocupar a largura total da barra */
+    background-color: white;
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 1000;
+    display: none;
+}
+
+.suggestions div {
+    padding: 10px;
+    cursor: pointer;
+    color: black; /* Cor do texto */
+}
+
+.suggestions div:hover {
+    background-color: #f0f0f0; /* Cor de fundo ao passar o mouse */
+}
+

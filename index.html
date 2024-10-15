@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zerone Serviços - Orçamento</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Cabeçalho do site com navegação -->
+    <header>
+        <div class="logo">
+            <a href="https://www.infozerone.com.br">
+                <img src="https://thumbor.cartpanda.com/gie0vBPSlk0btnp3-1BiYtdN_84=/https://assets.mycartpanda.com/static/theme_images/68/c8/91/101999_9844619687.png" alt="Zerone">
+            </a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#orcamento">Orçamento</a></li>
+            </ul>
+        </nav>
+        
+            <!-- Barra de pesquisa e sugestões -->
+<div class="header-right">
+    <input type="text" id="search-bar" class="search-bar" placeholder="Pesquisar serviços...">
+    <div id="suggestions" class="suggestions"></div>
+    <a href="https://api.whatsapp.com/send?phone=554830357198&text=Olá, gostaria de solicitar um orçamento." target="_blank" class="btn-whatsapp">WhatsApp</a>
+</div>
+</div>
+    </header>
+
+    <!-- Seção Home -->
+<section id="home">
+    <div class="home-content">
+        <div class="home-img">
+            <img src="https://thumbor.cartpanda.com/0ZsmfmxYiQ7WUDsNc79woXidJcA=/1024x0/https://assets.mycartpanda.com/static/theme_images/68/c8/91/101999_3960901434.jpg">
+        </div>
+        <div class="home-text">
+            <h2>Bem-vindo à Zerone Serviços</h2>
+            <p>Oferecemos uma ampla gama de serviços, incluindo manutenção de computadores, reparos em celulares e tablets, impressão digital e muito mais. Conte com a nossa equipe especializada para garantir a melhor qualidade e rapidez no atendimento.</p>
+            <p>Entre em contato conosco para mais informações ou solicite um orçamento online!</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Seção Serviços -->
+<section id="servicos">
+    <center><h1>Serviços Disponíveis</h1></center>
+    <br>
+    <div class="servicos-list">
+        <div class="servico">
+            <h3>Video Game</h3>
+            <ul>
+                <li>Limpeza</li>
+                <li>Manutenção</li>
+                <li>Venda de Acessórios</li>
+                <li>Vendas de novos e usados</li>
+            </ul>
+        </div>
+        <div class="servico">
+            <h3>Celular/Tablet</h3>
+            <ul>
+                <li>Formatação</li>
+                <li>Manutenção</li>
+                <li>Instalação de Software</li>
+                <li>Troca de componentes internos</li>
+                <li>Limpeza química</li>
+                <li>Troca de Tela</li>
+                <li>Vendas de Novos e Usados</li>
+                <li>Vendas de Acessórios</li>
+            </ul>
+        </div>
+        <div class="servico">
+            <h3>Computador/Notebook</h3>
+            <ul>
+                <li>Limpeza</li>
+                <li>Manutenção</li>
+                <li>Formatação</li>
+                <li>Montagem de Computador</li>
+                <li>Instalação de Software</li>
+                <li>Manutenção Para Rede</li>
+            </ul>
+        </div>
+        <div class="servico">
+            <h3>Serviços/Documentos</h3>
+            <ul>
+                <li>Segunda Via (CELESC/CASAN/TELEFONE)</li>
+                <li>Elaboração de Currículo</li>
+                <li>Serviço de Despachante</li>
+                <li>Elaboração de Documentos (Contratos, Recibos e etc)</li>
+            </ul>
+        </div>
+        <div class="servico">
+            <h3>Outros</h3>
+            <ul>
+                <li>Cópia/ Até A3</li>
+                <li>Impressão/ Até A3</li>
+                <li>Digitalização/ Até A4</li>
+                <li>Plastificação/ Até A3</li>
+                <li>Encadernação/ Até A3</li>
+                <li>Revelação de foto</li>
+                <li>Foto 3x4</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Seção de Orçamento -->
+    <section id="orcamento">
+        <h2>Solicite um Orçamento</h2>
+        <form id="orcamentoForm">
+            <div class="form-group">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Digite seu email">
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" required placeholder="Digite seu telefone">
+            </div>
+            <div class="form-group">
+                <label for="descricao">Descrição do Orçamento</label>
+                <textarea id="descricao" name="descricao" required placeholder="Descreva o que você precisa"></textarea>
+            </div>
+            <button type="submit" class="btn-primary">Enviar Orçamento</button>
+        </form>
+    </section>
+    <!-- Seção Informações -->
+<section id="informacoes">
+    <div class="info-content">
+        <div class="info-box">
+            <h3>Sobre a Empresa</h3>
+            <p>Diarimente o perfil empresarial da ZERONE INFORMÁTICA conquista um número cada vez maior de clientes e amigos! Faça parte você também desse grande grupo de pessoas que priorizam a qualidade, a segurança e a agilidade nos serviços. </p>
+        </div>
+        <div class="info-box">
+            <h3>Nosso Endereço</h3>
+            <p><a href="https://www.google.com/maps/place/Zerone+Infom%C3%A1tica/@-27.5619733,-48.6223497,17z/data=!3m1!4b1!4m6!3m5!1s0x9527499f5267f7f1:0x5ae8ba4758d24de!8m2!3d-27.5619781!4d-48.6197748!16s%2Fg%2F11clvt6hy4?entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">547 SALA 36-A, R. Arnoldo Pedro Meira - Ipiranga, São José - SC, 88111-370</a></p>
+        </div>
+       
+        
+        <div class="info-box">
+            <h3>Redes Sociais</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/zeronebarreiros?locale=pt_BR" target="_blank">
+                    <img src="facebook-logo-24.png" alt="Facebook" class="social-icon">
+                </a>
+                <a href="https://www.instagram.com/infozerone/" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" class="social-icon">
+                </a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ouvidoriazero@gmail.com" target="_blank">
+                    <img src="gmail-logo-24.png" alt="E-mail" class="social-icon">
+                </a>
+                
+                
+            </div>
+        </div>
+        <div class="info-box">
+            <h3>Horário de Atendimento</h3>
+            <p>Seg. a Sexta 08:30 as 19:00/Sab. 08:00 as 16:00. </p>
+            
+        </div>
+    </div>
+</section>
+
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Zerone Serviços. CNPJ: 34.469.216/0001-12</p>
+        </div>
+    </footer>
+    
+    
+
+    <!-- Link para o JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
