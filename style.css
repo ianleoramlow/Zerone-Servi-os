@@ -38,47 +38,6 @@ header {
     flex-wrap: wrap;
 }
 
-/* Configuração para o carrossel de vídeos */
-.video-carousel {
-    position: relative;
-    width: 100%;
-    max-width: 400px; /* Ajustando a largura máxima para vídeos verticais */
-    height: 700px; /* Ajustando a altura para vídeos verticais */
-    overflow: hidden;
-    margin: 0 auto; /* Centralizar o carrossel */
-}
-
-.carousel-video {
-    position: absolute;
-    width: 100%; /* Preenche toda a largura do contêiner */
-    height: 100%; /* Preenche toda a altura do contêiner */
-    object-fit: cover; /* Garante que o vídeo preencha o espaço sem distorcer */
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-.carousel-video:nth-child(1) {
-    animation: video-carousel 15s infinite;
-}
-
-.carousel-video:nth-child(2) {
-    animation: video-carousel 15s infinite 5s;
-}
-
-.carousel-video:nth-child(3) {
-    animation: video-carousel 15s infinite 10s;
-}
-
-@keyframes video-carousel {
-    0%, 33% {
-        opacity: 1;
-    }
-    66%, 100% {
-        opacity: 0;
-    }
-}
 
 /* Texto da seção Home */
 .home-text {
@@ -143,6 +102,102 @@ header {
 .btn-whatsapp:hover {
     background-color: #1d8f53;
 }
+
+/* Configuração para o carrossel de vídeos */
+.video-carousel {
+    position: relative;
+    width: 100%;
+    max-width: 400px; /* Ajustando a largura máxima para vídeos verticais */
+    height: 700px; /* Ajustando a altura para vídeos verticais */
+    overflow: hidden;
+    margin: 0 auto; /* Centralizar o carrossel */
+}
+
+.carousel-video {
+    position: absolute;
+    width: 100%; /* Preenche toda a largura do contêiner */
+    height: 100%; /* Preenche toda a altura do contêiner */
+    object-fit: cover; /* Garante que o vídeo preencha o espaço sem distorcer */
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.carousel-video:nth-child(1) {
+    animation: video-carousel 15s infinite;
+}
+
+.carousel-video:nth-child(2) {
+    animation: video-carousel 15s infinite 5s;
+}
+
+.carousel-video:nth-child(3) {
+    animation: video-carousel 15s infinite 10s;
+}
+
+@keyframes video-carousel {
+    0%, 33% {
+        opacity: 1;
+    }
+    66%, 100% {
+        opacity: 0;
+    }
+}
+
+/* Seção Home */
+#home {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.home-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.home-text {
+    max-width: 50%;
+    text-align: left;
+}
+
+.video-container {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-carousel {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.carousel-video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.video-message {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}
+
+.video-message img.sound-icon {
+    width: 20px;
+    height: auto;
+    vertical-align: middle; /* Alinha o ícone de som com o texto */
+}
+
+
 
 /* Seção de Serviços */
 #servicos {
