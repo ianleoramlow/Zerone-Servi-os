@@ -25,15 +25,18 @@ header {
 .video-carousel {
     position: relative;
     width: 100%;
-    max-width: 640px;
-    height: 360px;
+    max-width: 360px; /* Definindo uma largura menor para vídeos verticais */
+    height: 640px; /* Altura maior para vídeos na orientação vertical */
     overflow: hidden;
+    margin: 0 auto; /* Centralizando o carrossel */
 }
 
 .carousel-video {
     position: absolute;
-    width: 100%;
-    height: auto;
+    width: auto; /* Largura automática para respeitar a proporção vertical */
+    height: 100%; /* Altura total do contêiner para vídeos verticais */
+    left: 50%;
+    transform: translateX(-50%); /* Centralizando o vídeo horizontalmente */
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
@@ -64,7 +67,6 @@ header {
         opacity: 0;
     }
 }
-
 
 .nav-links {
     list-style: none;
