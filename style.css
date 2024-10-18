@@ -25,18 +25,19 @@ header {
 .video-carousel {
     position: relative;
     width: 100%;
-    max-width: 360px; /* Definindo uma largura menor para vídeos verticais */
-    height: 640px; /* Altura maior para vídeos na orientação vertical */
+    max-width: 360px; /* Largura ajustada para vídeos verticais */
+    height: 640px; /* Altura ajustada para vídeos na orientação vertical */
     overflow: hidden;
-    margin: 0 auto; /* Centralizando o carrossel */
+    margin: 0 auto; /* Centraliza o contêiner */
 }
 
 .carousel-video {
     position: absolute;
-    width: auto; /* Largura automática para respeitar a proporção vertical */
-    height: 100%; /* Altura total do contêiner para vídeos verticais */
-    left: 50%;
-    transform: translateX(-50%); /* Centralizando o vídeo horizontalmente */
+    width: 100%; /* Preencher toda a largura do contêiner */
+    height: auto; /* Altura automática para manter a proporção */
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Mantém o vídeo centralizado */
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
@@ -67,6 +68,7 @@ header {
         opacity: 0;
     }
 }
+
 
 .nav-links {
     list-style: none;
