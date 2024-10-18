@@ -21,6 +21,11 @@ header {
     align-items: center;
     padding: 20px 50px;
     flex-wrap: wrap;
+    .logo img {
+    width: 150px; /* Ajuste este valor conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
 }
 
 /* Seção Home com vídeos verticais */
