@@ -22,9 +22,49 @@ header {
     flex-wrap: wrap;
 }
 
-.logo img {
-    width: 250px;
+.video-carousel {
+    position: relative;
+    width: 100%;
+    max-width: 640px;
+    height: 360px;
+    overflow: hidden;
 }
+
+.carousel-video {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.carousel-video:nth-child(1) {
+    animation: video-carousel 15s infinite;
+}
+
+.carousel-video:nth-child(2) {
+    animation: video-carousel 15s infinite 5s;
+}
+
+.carousel-video:nth-child(3) {
+    animation: video-carousel 15s infinite 10s;
+}
+
+@keyframes video-carousel {
+    0% {
+        opacity: 1;
+    }
+    33% {
+        opacity: 1;
+    }
+    66% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 
 .nav-links {
     list-style: none;
