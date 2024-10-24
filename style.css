@@ -23,7 +23,7 @@ header {
 }
 
 .logo img {
-    width: 150px;
+    width: 200px;
 }
 
 .nav-links {
@@ -88,8 +88,8 @@ header {
     max-width: 100%; /* Deixar a imagem responsiva */
     height:  /* Manter as proporções da imagem */
     border-radius: 5px; /* Bordas arredondadas para a imagem */
-    max-width: 300px; /* Limitar a largura da imagem */
-    height: 200px;;
+    max-width: 400px; /* Limitar a largura da imagem */
+    height: 350px;;
 }
 
 .home-text {
