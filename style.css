@@ -88,9 +88,10 @@ header {
     max-width: 100%; /* Deixar a imagem responsiva */
     height: auto; /* Manter as proporções da imagem */
     border-radius: 5px; /* Bordas arredondadas para a imagem */
-    max-width: 400px; /* Limitar a largura da imagem */
-    height: 350px;;
+    max-width: 600px; /* Aumentar a largura máxima da imagem */
+    height: 500px; /* Aumentar a altura da imagem */
 }
+
 
 .home-text {
     max-width: 600px; /* Limitar a largura do texto */
