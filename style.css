@@ -7,9 +7,8 @@
 }
 
 body {
-    background-color: #f4f4f4;
+    background-color: #f4f4f4; /* Fundo claro */
     color: #333;
-    min-height: 100vh; /* Garantir que a página ocupe pelo menos 100% da altura da tela */
 }
 
 /* Cabeçalho */
@@ -21,113 +20,99 @@ header {
     align-items: center;
     padding: 20px 50px;
     flex-wrap: wrap;
-    .logo img {
-    width: 300px; /* Ajuste este valor conforme necessário */
-    
 }
 
+.logo img {
+    width: 250px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.nav-links li a:hover {
+    color: #00f;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-bar {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 200px;
+}
+
+.btn-whatsapp {
+    background-color: #25D366;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1d8f53;
 }
 
 /* Seção Home */
 #home {
-    padding: 40px 20px;
-    background-color: #f9f9f9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    padding: 40px 20px; /* Espaçamento para dar mais respiro */
+    background-color: #f9f9f9; /* Cor de fundo clara */
 }
 
-/* Texto da seção Home */
+.home-content {
+    display: flex;
+    align-items: center; /* Alinhar a imagem e o texto verticalmente */
+    justify-content: space-between; /* Espaçar os itens */
+    gap: 20px; /* Espaçamento entre a imagem e o texto */
+    flex-wrap: wrap; /* Para os itens se ajustarem no layout em telas menores */
+}
+
+.home-img img {
+    max-width: 100%; /* Deixar a imagem responsiva */
+    height: auto; /* Manter as proporções da imagem */
+    border-radius: 5px; /* Bordas arredondadas para a imagem */
+    max-width: 500px; /* Limitar a largura da imagem */
+    height: 500px;;
+}
+
 .home-text {
-    max-width: 600px;
-    color: #000;
-    text-align: left; /* Alinhar o texto à esquerda */
-    padding: 20px;
+    max-width: 600px; /* Limitar a largura do texto */
+    color: #000; /* Cor do texto */
 }
 
 .home-text h2 {
-    margin-bottom: 20px;
-    font-size: 28px;
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    font-size: 28px; /* Tamanho do título */
 }
 
 .home-text p {
-    margin-bottom: 10px;
-    line-height: 1.6;
-    color: #333;
+    margin-bottom: 10px; /* Espaço entre os parágrafos */
+    line-height: 1.6; /* Melhorar a legibilidade */
+    color: #333; /* Cor dos parágrafos */
 }
-
-/* Contêiner do vídeo e mensagem */
-.video-container {
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Configuração para o carrossel de vídeos */
-.video-carousel {
-    position: relative;
-    width: 100%;
-    max-width: 400px; /* Ajustando a largura máxima para vídeos verticais */
-    height: 700px; /* Ajustando a altura para vídeos verticais */
-    overflow: hidden;
-    margin: 0 auto;
-}
-
-.carousel-video {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Garante que o vídeo preencha o espaço sem distorcer */
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-.carousel-video:nth-child(1) {
-    animation: video-carousel 15s infinite;
-}
-
-.carousel-video:nth-child(2) {
-    animation: video-carousel 15s infinite 5s;
-}
-
-.carousel-video:nth-child(3) {
-    animation: video-carousel 15s infinite 10s;
-}
-
-@keyframes video-carousel {
-    0%, 33% {
-        opacity: 1;
-    }
-    66%, 100% {
-        opacity: 0;
-    }
-}
-
-/* Mensagem ao lado do vídeo */
-.video-message {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 18px;
-    color: #333;
-}
-
-.video-message img.sound-icon {
-    width: 20px;
-    height: auto;
-    vertical-align: middle; /* Alinha o ícone de som com o texto */
-}
-
 
 
 /* Seção de Serviços */
 #servicos {
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #f9f9f9; /* Fundo claro para destacar a seção */
 }
 
 .servicos-list {
@@ -138,30 +123,31 @@ header {
 }
 
 .servico {
-    flex: 1 1 200px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+    flex: 1 1 200px; /* Tamanho flexível das colunas */
+    background-color: #fff; /* Fundo branco */
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 8px; /* Bordas arredondadas */
     padding: 15px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
 }
 
 .servico h3 {
     margin-bottom: 10px;
-    color: #000;
+    color: #000; /* Cor do título */
 }
 
 .servico ul {
-    list-style-type: none;
-    padding-left: 0;
+    list-style-type: none; /* Remove a bolinha da lista */
+    padding-left: 0; /* Remove o padding */
 }
 
 .servico li {
-    margin: 5px 0;
-    color: #333;
+    margin: 5px 0; /* Espaçamento entre os itens da lista */
+    color: #333; /* Cor do texto dos itens */
 }
 
-/* Seção Orçamento */
+
+/* Orçamento Section */
 #orcamento {
     padding: 50px 0;
     text-align: center;
@@ -217,58 +203,70 @@ button {
 button:hover {
     background-color: #0056b3;
 }
-
-/* Seção Informações */
+/* Seção Informações ainda mais compacta */
 #informacoes {
-    padding: 10px 15px;
-    background-color: #000;
-    color: #fff;
+    padding: 10px 15px; /* Reduzir ainda mais o espaçamento */
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; /* Centralizar verticalmente */
     flex-wrap: wrap;
-    font-size: 12px;
+    font-size: 12px; /* Diminuir o tamanho do texto */
 }
 
 .info-content {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    gap: 8px;
+    gap: 8px; /* Reduzir o espaçamento entre as caixas */
     flex-wrap: wrap;
 }
 
 .info-box {
-    flex: 1 1 150px;
-    text-align: center;
+    flex: 1 1 150px; /* Diminuir a largura mínima das caixas */
+    text-align: center; /* Centralizar o texto em cada box */
 }
 
 .info-box h3 {
     margin-bottom: 4px;
-    font-size: 14px;
-    color: #00f;
+    font-size: 14px; /* Reduzir o tamanho do título */
+    color: #00f; /* Azul para os títulos */
 }
 
 .info-box p {
     margin-bottom: 4px;
-    line-height: 1.3;
+    line-height: 1.3; /* Reduzir o espaçamento entre linhas */
 }
 
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 8px;
+    gap: 8px; /* Reduzir ainda mais o espaço entre os ícones */
 }
 
 .social-icon {
-    width: 20px;
+    width: 20px; /* Diminuir ainda mais o tamanho dos ícones sociais */
     height: auto;
-    filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1); /* Ícones brancos */
 }
 
 .social-icon:hover {
-    filter: brightness(0.7);
+    filter: brightness(0.7); /* Efeito ao passar o mouse */
 }
+.social-icon {
+    width: 20px; /* Tamanho pequeno para o ícone do e-mail */
+    height: auto;
+    filter: brightness(0) invert(1); /* Ícone branco para combinar com o fundo */
+}
+
+.social-icon:hover {
+    filter: brightness(0.7); /* Efeito ao passar o mouse */
+}
+
+
+
+
 
 /* Rodapé */
 footer {
@@ -278,16 +276,17 @@ footer {
     padding: 20px;
 }
 
+
 /* Ajuste no posicionamento da barra de sugestões */
 .header-right {
-    position: relative;
+    position: relative; /* Tornar a posição do contêiner relativa para que os itens internos possam ser posicionados de forma absoluta */
 }
 
 .suggestions {
     position: absolute;
-    top: 40px;
+    top: 40px; /* Ajuste a altura para garantir que apareça abaixo da barra de pesquisa */
     left: 0;
-    width: 100%;
+    width: 100%; /* Para a sugestão ocupar a largura total da barra */
     background-color: white;
     border: 1px solid #ccc;
     max-height: 150px;
@@ -299,9 +298,11 @@ footer {
 .suggestions div {
     padding: 10px;
     cursor: pointer;
-    color: black;
+    color: black; /* Cor do texto */
 }
 
 .suggestions div:hover {
-    background-color: #f0f0f0;
+    background-color: #f0f0f0; /* Cor de fundo ao passar o mouse */
 }
+
+
